@@ -1,4 +1,8 @@
 import '../styles/TodoItem.css';
+
+import { CiSquareRemove } from "react-icons/ci";
+
+
 function TodoItem(props) {
     return (
       <li className={`TodoItem`}>
@@ -12,7 +16,9 @@ function TodoItem(props) {
         <button 
           className='DeleteItem'
           onClick={props.onDelete}
-        >🗑</button>
+        >
+          <CiSquareRemove />
+        </button>
       </li>
     );
   }

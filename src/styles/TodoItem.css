@@ -1,38 +1,41 @@
 ul {
     padding-left: 0;
 }
+
 .TodoItem {
+    padding: 0;
     width: 50%;
     margin-left: 25%;
     list-style: none;
     position: relative;
     margin-top: 3px;
+    height: 60px;
+    background-color: #fff;
 }
 
 .TodoItem-text {
     font-size: 20px;
-    color: #fff;
+    color: #000;
     position: absolute;
-    top: 7px;
+    top: 30%;
+    left: 60px;
 }
 
 .DeleteItem {
     position: absolute;
+    margin: auto;
+    background-color: transparent;
     font-size: 10px;
     right: 5px;
-    top: 3px;
+    top: 8px;
+    padding: 0;
     border: none;
     border-radius: 0;
     cursor: pointer;
-    color: #808;
-    font-size: 20px;
-    transition: all 0.3s ease;
+    color: #f00;
+    font-size: 40px;
 }
 
-.DeleteItem:hover {
-    color: #f00;
-    text-shadow: 0 0 10px #f00;
-}
 
 .TodoItem-text--completed {
     text-decoration: line-through;
@@ -40,7 +43,8 @@ ul {
 
 .TodoItem-checkbox {
     appearance: none;
-    top: 2px;
+    top: 12px;
+    left: 10px;
     width: 30px;
     height: 30px;
     border: 2px solid #080;

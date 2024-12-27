@@ -1,14 +1,13 @@
 .TodoSearch {
     background: #0C0C0C;
     border: 2px solid #0f0;
-    border-radius: 4px;
+    border-radius: 0px;
     color: #0f0;
     font-family: 'Courier New', monospace;
     font-size: 16px;
     height: 40px;
     padding: 0 15px;
-    width: 80%;
-    max-width: 400px;
+    width: 48%;
     margin: 0 auto;
     display: block;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
