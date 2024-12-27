@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ratopro/static/css/main.60102ba1.css",
+    "main.js": "/ratopro/static/js/main.e23fefba.js",
+    "index.html": "/ratopro/index.html",
+    "main.60102ba1.css.map": "/ratopro/static/css/main.60102ba1.css.map",
+    "main.e23fefba.js.map": "/ratopro/static/js/main.e23fefba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60102ba1.css",
+    "static/js/main.e23fefba.js"
+  ]
+}
