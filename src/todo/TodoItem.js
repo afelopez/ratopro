@@ -6,7 +6,7 @@ function TodoItem(props) {
           className={`TodoItem-checkbox`} 
           type="checkbox" 
           defaultChecked={props.completed}
-          onClick={props.onComplete}
+          onChange={props.onComplete}
         />
         <span className={`TodoItem-text ${props.completed && "TodoItem-text--completed"}`}>{props.text}</span>
         <button 
