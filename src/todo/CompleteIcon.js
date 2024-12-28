@@ -1,9 +1,16 @@
-import React from 'react';
-import {TodoIcon} from './TodoIcon';
+import React, { useContext } from 'react';
 
-function CompleteIcon({completed, onClick}) {
+import {TodoIcon} from './TodoIcon';
+import { TodoContext } from './Context';
+
+function CompleteIcon({completed, text}) {
+    const {completeTodo} = useContext(TodoContext);
     return (
-        <TodoIcon type="check" color={completed ? 'green' : 'gray'} onClick={onClick}/>
+        <TodoIcon 
+            type="check" 
+            color={completed ? 'green' : 'gray'} 
+            onClick={() => completeTodo(text)}
+        />
     );
 }
 

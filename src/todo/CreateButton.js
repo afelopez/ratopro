@@ -1,14 +1,13 @@
+import { useContext } from 'react';
+
+import { TodoContext } from './Context';
+
 import '../styles/CreateButton.css';
 
-function AddTodoItem(event) {
-    console.log(event);
-    console.log(event.target);
-}
-
-
 function CreateButton() {
+    const {addTodo} = useContext(TodoContext);
     return (
-        <button className="create-button" onClick={AddTodoItem}>+</button>
+        <button className="create-button" onClick={() => addTodo}>+</button>
     );
 }
 

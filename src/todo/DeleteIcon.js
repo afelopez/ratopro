@@ -1,9 +1,12 @@
-import React from 'react';
-import {TodoIcon} from './TodoIcon';
+import React, { useContext } from 'react';
 
-function DeleteIcon({onClick}) {
+import {TodoIcon} from './TodoIcon';
+import { TodoContext } from './Context';
+
+function DeleteIcon({text}) {
+    const {deleteTodo} = useContext(TodoContext);
     return (
-        <TodoIcon type="delete" color={'gray'} onClick={onClick}/>
+        <TodoIcon type="delete" color={'gray'} onClick={()=> deleteTodo(text)}/>
     );
 }
 
