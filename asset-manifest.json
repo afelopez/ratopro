@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ratopro/static/css/main.28503f21.css",
-    "main.js": "/ratopro/static/js/main.10bf8b34.js",
+    "main.css": "/ratopro/static/css/main.c2741ecf.css",
+    "main.js": "/ratopro/static/js/main.f1c108e6.js",
     "index.html": "/ratopro/index.html",
-    "main.28503f21.css.map": "/ratopro/static/css/main.28503f21.css.map",
-    "main.10bf8b34.js.map": "/ratopro/static/js/main.10bf8b34.js.map"
+    "main.c2741ecf.css.map": "/ratopro/static/css/main.c2741ecf.css.map",
+    "main.f1c108e6.js.map": "/ratopro/static/js/main.f1c108e6.js.map"
   },
   "entrypoints": [
-    "static/css/main.28503f21.css",
-    "static/js/main.10bf8b34.js"
+    "static/css/main.c2741ecf.css",
+    "static/js/main.f1c108e6.js"
   ]
 }
