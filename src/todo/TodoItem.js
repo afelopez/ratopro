@@ -1,24 +1,16 @@
+import {CompleteIcon} from './CompleteIcon';
+import {DeleteIcon} from './DeleteIcon';
 import '../styles/TodoItem.css';
-
-import { CiSquareRemove } from "react-icons/ci";
 
 
 function TodoItem(props) {
-    return (
+  return (
       <li className={`TodoItem`}>
-        <input 
-          className={`TodoItem-checkbox`} 
-          type="checkbox" 
-          defaultChecked={props.completed}
-          onChange={props.onComplete}
-        />
-        <span className={`TodoItem-text ${props.completed && "TodoItem-text--completed"}`}>{props.text}</span>
-        <button 
-          className='DeleteItem'
-          onClick={props.onDelete}
-        >
-          <CiSquareRemove />
-        </button>
+        <CompleteIcon completed={props.completed} onClick={props.onComplete}/>
+        <span  className={`TodoItem-text ${props.completed && "TodoItem-text--completed"}`}>
+          {props.text}
+        </span>
+        <DeleteIcon onClick={props.onDelete}/>
       </li>
     );
   }

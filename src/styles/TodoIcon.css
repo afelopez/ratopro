@@ -1,0 +1,30 @@
+.Icon-container {
+    position: relative;
+    display: inline-block;
+
+    cursor: pointer;
+}
+.Icon-container-check {
+    position: absolute ;
+    padding-top: 15px;
+    left: 10px;
+}
+
+.Icon-container-delete {
+    position: absolute ;
+    padding-top: 15px;
+    right: 10px;
+}
+
+.Icon-svg path{
+    width: 24px;
+    height: 24px;
+}
+
+.Icon-container-delete:hover .Icon-svg path{
+    fill: red;
+}
+
+.Icon-container-check:hover .Icon-svg path{
+    fill: green;
+}
