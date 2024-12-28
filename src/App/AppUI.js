@@ -7,14 +7,13 @@ import { CreateButton } from '../todo/CreateButton';
 import { TodoItem } from '../todo/TodoItem';
 import { TodoLoading } from '../todo/TodoLoading';
 import { Error } from '../todo/Error'; 
-import { TodoEmpty } from '../todo/TodoEmpty';
 import { TodoContext } from '../todo/Context'; 
 import { TodoForm } from '../todo/TodoForm'; 
 import { Modal } from '../Modal';
 
 function AppUI() {
 
-  const {loading, error, filteredTodos, totalTodos, isOpenModal} = useContext(TodoContext);
+  const {loading, error, filteredTodos, isOpenModal} = useContext(TodoContext);
   return (
     <div className='container'>
       <TodoCounter />
@@ -22,7 +21,6 @@ function AppUI() {
       <TodoList> 
           {loading && <TodoLoading />}
           {error && <Error />}
-          {!loading &&!totalTodos  && <TodoEmpty />}
           {filteredTodos.map(todo => (
             <TodoItem 
               key={todo.text} 
