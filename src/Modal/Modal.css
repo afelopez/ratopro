@@ -1,0 +1,59 @@
+.Modal {
+    background: rgba(0, 12, 18, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    z-index: 1000;
+}
+
+.Modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #00ff00;
+    animation: glitch 2s infinite;
+    pointer-events: none;
+}
+.Modal-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Modal-button:hover {
+    background: #00ff00;
+    color: rgba(0, 12, 18, 0.9);
+}
+
+@keyframes glitch {
+    0% { opacity: 1; }
+    7% { opacity: 0.75; }
+    10% { opacity: 1; }
+    27% { opacity: 1; }
+    30% { opacity: 0.75; }
+    35% { opacity: 1; }
+    52% { opacity: 1; }
+    55% { opacity: 0.75; }
+    50% { opacity: 1; }
+    72% { opacity: 1; }
+    75% { opacity: 0.75; }
+    80% { opacity: 1; }
+    100% { opacity: 1; }
+}

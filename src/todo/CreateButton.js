@@ -5,9 +5,9 @@ import { TodoContext } from './Context';
 import '../styles/CreateButton.css';
 
 function CreateButton() {
-    const {addTodo} = useContext(TodoContext);
+    const {openModal} = useContext(TodoContext);
     return (
-        <button className="create-button" onClick={() => addTodo}>+</button>
+        <button className="create-button" onClick={() => openModal()}>+</button>
     );
 }
 

@@ -9,10 +9,11 @@ import { TodoLoading } from '../todo/TodoLoading';
 import { Error } from '../todo/Error'; 
 import { TodoEmpty } from '../todo/TodoEmpty';
 import { TodoContext } from '../todo/Context';  
+import { Modal } from '../Modal';
 
 function AppUI() {
 
-  const {loading, error, filteredTodos, totalTodos} = useContext(TodoContext);
+  const {loading, error, filteredTodos, totalTodos, isOpenModal} = useContext(TodoContext);
   return (
     <div className='container'>
       <TodoCounter />
@@ -30,6 +31,14 @@ function AppUI() {
           ))}
       </TodoList>        
       <CreateButton />
+
+      {isOpenModal && (
+        <Modal>   
+          Hola
+        </Modal>
+      )}
+
+
     </div>  
   );
 }
