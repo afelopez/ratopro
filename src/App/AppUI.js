@@ -8,7 +8,8 @@ import { TodoItem } from '../todo/TodoItem';
 import { TodoLoading } from '../todo/TodoLoading';
 import { Error } from '../todo/Error'; 
 import { TodoEmpty } from '../todo/TodoEmpty';
-import { TodoContext } from '../todo/Context';  
+import { TodoContext } from '../todo/Context'; 
+import { TodoForm } from '../todo/TodoForm'; 
 import { Modal } from '../Modal';
 
 function AppUI() {
@@ -34,7 +35,7 @@ function AppUI() {
 
       {isOpenModal && (
         <Modal>   
-          Hola
+          <TodoForm />
         </Modal>
       )}
 

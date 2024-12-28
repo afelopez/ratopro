@@ -1,7 +1,7 @@
 function TodoEmpty() {
   return (
     <div>
-      <h1>Todo Empty</h1>
+      <h1>You dont have any task to do, create one!</h1>
     </div>
   );
 }

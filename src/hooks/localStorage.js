@@ -7,19 +7,19 @@ function useLocalStorage(valueName, defaultValue = []) {
 
 
     useEffect(() => { 
-      setTimeout(() => {
-        try {
-          const itemsFromStorage = window.localStorage.getItem(valueName)
-          if (itemsFromStorage) {
-            setItems(JSON.parse(itemsFromStorage))
-          }
-        } catch (error) {
-          setError(error);
-        } finally {
-          setLoading(false);
+      // execute just once
+      
+      try {
+        const itemsFromStorage = window.localStorage.getItem(valueName)
+        if (itemsFromStorage) {
+          setItems(JSON.parse(itemsFromStorage))
         }
-      }, 2000);
-    }, []);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    }, [valueName]);
 
 
   
