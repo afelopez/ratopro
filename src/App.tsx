@@ -1,10 +1,11 @@
-import { useTodo } from './context/TodoContext';
+import { Header } from './components/Header';
 
 function App() {
-  const { completedCount, totalCount } = useTodo();
   return (
-    <div className="min-h-screen bg-bg-primary flex items-center justify-center">
-      <p className="text-text-primary">{completedCount}/{totalCount} tasks</p>
+    <div className="min-h-screen bg-bg-primary">
+      <div className="max-w-2xl mx-auto">
+        <Header />
+      </div>
     </div>
   );
 }
