@@ -17,7 +17,6 @@ export function TodoForm() {
       type: 'ADD_TODO',
       payload: { text: text.trim(), completed: false, priority, dueDate: dueDate !== '' ? dueDate : null },
     });
-    dispatch({ type: 'CLOSE_MODAL' });
     setText(''); setPriority('medium'); setDueDate(''); setError('');
   };
 

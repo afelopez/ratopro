@@ -1,7 +1,7 @@
 {
   "name": "ratopro",
   "version": "1.0.0",
-  "homepage": "http://afelopez.github.io/ratopro",
+  "homepage": "https://afelopez.github.io/ratopro",
   "type": "module",
   "scripts": {
     "dev": "vite",
