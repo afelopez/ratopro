@@ -44,6 +44,8 @@ function todoReducer(state: TodoState, action: TodoAction): TodoState {
       return { ...state, isModalOpen: true };
     case 'CLOSE_MODAL':
       return { ...state, isModalOpen: false };
+    default:
+      return state;
   }
 }
 
@@ -51,9 +53,9 @@ function loadInitialState(): TodoState {
   try {
     const saved = window.localStorage.getItem(STORAGE_KEY);
     const todos = saved !== null ? (JSON.parse(saved) as Todo[]) : [];
-    return { todos, searchTerm: '', activeFilter: 'all' as FilterTab, isModalOpen: false };
+    return { todos, searchTerm: '', activeFilter: 'all', isModalOpen: false };
   } catch {
-    return { todos: [], searchTerm: '', activeFilter: 'all' as FilterTab, isModalOpen: false };
+    return { todos: [], searchTerm: '', activeFilter: 'all', isModalOpen: false };
   }
 }
 
