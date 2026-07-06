@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { TodoSearch } from './components/TodoSearch';
 import { FilterTabs } from './components/FilterTabs';
+import { TodoList } from './components/TodoList';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header />
         <TodoSearch />
         <FilterTabs />
+        <TodoList />
       </div>
     </div>
   );
