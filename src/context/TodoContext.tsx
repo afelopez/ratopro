@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
-import type { Todo, TodoState, TodoAction, FilterTab } from '../types/todo';
+import type { Todo, TodoState, TodoAction } from '../types/todo';
 
 const STORAGE_KEY = 'RATOPRO_V1';
 const PRIORITY_ORDER: Record<string, number> = { high: 0, medium: 1, low: 2 };
