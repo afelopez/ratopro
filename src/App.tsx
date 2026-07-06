@@ -1,9 +1,10 @@
+import { useTodo } from './context/TodoContext';
+
 function App() {
+  const { completedCount, totalCount } = useTodo();
   return (
     <div className="min-h-screen bg-bg-primary flex items-center justify-center">
-      <h1 className="text-4xl font-bold font-mono tracking-widest text-accent">
-        RATOPRO
-      </h1>
+      <p className="text-text-primary">{completedCount}/{totalCount} tasks</p>
     </div>
   );
 }
