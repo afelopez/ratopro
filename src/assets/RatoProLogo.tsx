@@ -2,36 +2,24 @@ interface RatoProLogoProps { className?: string; }
 
 export function RatoProLogo({ className = '' }: RatoProLogoProps) {
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      <svg viewBox="0 0 120 60" width="72" height="36" aria-hidden="true" className="group">
-        {/* Tail */}
-        <path d="M 32 40 Q 14 52 7 39 Q 2 28 11 22" stroke="#7c3aed" strokeWidth="3" fill="none" strokeLinecap="round" />
-        {/* Body */}
-        <ellipse cx="60" cy="36" rx="28" ry="17" fill="#7c3aed" />
-        {/* Head */}
-        <circle cx="91" cy="30" r="14" fill="#7c3aed" />
-        {/* Ear outer */}
-        <circle cx="87" cy="17" r="8" fill="#7c3aed" />
-        {/* Ear inner */}
-        <circle cx="87" cy="17" r="4.5" fill="#4c1d95" />
-        {/* Back legs */}
-        <ellipse cx="44" cy="51" rx="6" ry="3.5" fill="#6d28d9" />
-        <ellipse cx="56" cy="52" rx="6" ry="3.5" fill="#6d28d9" />
-        {/* Front legs */}
-        <ellipse cx="74" cy="51" rx="6" ry="3.5" fill="#6d28d9" />
-        <ellipse cx="84" cy="52" rx="6" ry="3.5" fill="#6d28d9" />
-        {/* Eye white */}
-        <circle cx="97" cy="27" r="3.5" fill="white" />
-        {/* Eye pupil — glows on hover */}
-        <circle cx="98" cy="27" r="2" fill="#7c3aed" className="group-hover:fill-violet-300 transition-colors duration-300" />
-        {/* Nose */}
-        <ellipse cx="105" cy="31" rx="2.5" ry="2" fill="#a78bfa" />
-        {/* Checkmark on body */}
-        <path d="M 48 36 L 55 43 L 70 27" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-      <span className="text-2xl font-bold font-mono tracking-widest text-violet-400 select-none">
-        RATOPRO
-      </span>
-    </div>
+    <svg
+      viewBox="0 0 155 56"
+      width="124"
+      height="45"
+      aria-label="RatoPro"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Geometric rat head mark */}
+      <circle cx="14" cy="14" r="9" fill="#7c3aed" />
+      <circle cx="38" cy="14" r="9" fill="#7c3aed" />
+      <circle cx="26" cy="32" r="19" fill="#7c3aed" />
+      <path d="M 17 32 L 24 40 L 38 19" stroke="white" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      {/* Vertical rule */}
+      <line x1="62" y1="8" x2="62" y2="48" stroke="#7c3aed" strokeWidth="1" strokeOpacity="0.35" />
+      {/* Wordmark */}
+      <text x="74" y="27" fontFamily="Arial, Helvetica, sans-serif" fontWeight="900" fontSize="17" letterSpacing="3" fill="#ffffff">RATO</text>
+      <text x="74" y="47" fontFamily="Arial, Helvetica, sans-serif" fontWeight="900" fontSize="17" letterSpacing="3" fill="#a78bfa">PRO</text>
+    </svg>
   );
 }
